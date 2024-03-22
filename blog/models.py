@@ -8,7 +8,7 @@ class Post(models.Model):
     date= models.DateTimeField(auto_now_add=True)
     preview= models.TextField(blank=False, max_length=200, null=False)
     content= models.TextField(blank=False, null=False)
-    slug= models.SlugField()
+    slug= models.SlugField(default="", null=False)
 
     class Meta:
         ordering= ['-date']
