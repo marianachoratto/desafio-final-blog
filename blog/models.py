@@ -13,7 +13,13 @@ class Post(models.Model):
     class Meta:
         ordering= ['-date']
 
+    def __str__(self):
+        return f'{self.titulo} - {self.autor} - {self.date}'
+
 class Comentario(models.Model):
     usuario = models.CharField(max_length=50, blank=True)
     comentario = models.TextField(blank=False, max_length=200)
     data2= models.DateField(auto_now_add=True)
+
+    def __str__(self):
+        return f'Comentário de {self.usuario}'

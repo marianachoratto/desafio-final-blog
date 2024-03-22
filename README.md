@@ -1,3 +1,5 @@
 # desafio-final-blog
  
-testando commits 
+SuperUser: mariana 
+email: marianachoratto@gmail.com
+password: mama11
