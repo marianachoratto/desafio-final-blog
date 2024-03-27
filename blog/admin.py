@@ -5,7 +5,7 @@ from blog.models import Post, Comentario
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
-    list_display = ['titulo', 'autor', 'date', 'preview']
+    list_display = ['titulo', 'autor', 'date']
     search_fields = ['titulo', 'autor', 'date' ]
     list_filter = ['date']
     

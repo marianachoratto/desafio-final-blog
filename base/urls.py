@@ -17,8 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from blog.views import index_html
+from blog.views import resenha_do_livro #comentario
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path ('', index_html )
+    path ('', index_html ),
+    path('crepusculo', resenha_do_livro )
+    # path('crepusculo', comentario )
 ]
