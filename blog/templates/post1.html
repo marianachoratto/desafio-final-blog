@@ -1,7 +1,7 @@
 {% extends "index.html" %}
-{% load bootstrap5 %}
+<!-- {% load bootstrap5 %}
 {% load crispy_forms_tags %}
-{% bootstrap_css %}
+{% bootstrap_css %} -->
 {% block principal %}
 
     <div class="div-dos-posts">
@@ -16,15 +16,31 @@
     </div>
 
     <div class="div-dos-comentarios">
-      <h3>Deixe seu comentário aqui: </h3>
-      <form action="" method="POST" id="form">
-        {% csrf_token %}
+    <div class="div-dos-comentarios">
+        <h3>Deixe seu comentário aqui: </h3>
+        <form action="{% url 'enviar2' %}" method="POST" id="form">
 
-        {% for field in form.visible_fields %}
-        <div>{{field}}</div>
-        {% endfor %}
+            {% csrf_token %}
 
-        <button type="submit" class="btn btn-primary btn-block">Enviar comentário</button>
+            {% for field in form.visible_fields %}
+            <p>{{field.label}}</p> 
+            <div>{{field}}</div>
+
+            {% endfor %}
+
+            {% if sucesso %}
+            <p class="alert alert-success">Cadastro efetuado com sucesso! </p>
+            {% endif %}
+
+            <button type="submit" class="btn btn-primary btn-block">Enviar comentário</button>
+        </form>
+    </div>
+
+       
+    
+
+    <div class="comentarios-postados">
+
     </div>
 
 {% endblock %}
