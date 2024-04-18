@@ -1,6 +1,12 @@
 # desafio-final-blog
 
-Projeto Final do Bootcamp de back-end com Python e Django, feito pela WomakersCode. Feito em conjunto com as integrantes do Squad Laura Perrone, Leidejane Rosa, Elizabeth Pereira e Adriana Cristina. 
+Projeto Final do Bootcamp de back-end com Python e Django, feito pela WomakersCode. 
+
+Projeto feito com a linguagem Python, utilizando os frameworks Django e Bootstrap-5 e SQLite3.
+
+Feito com amor e em conjunto com as integrantes do Squad Laura Perrone, Leidejane Rosa, Elizabeth Pereira, Adriana Cristina, Raissa Carneiro e Cláudia Azambuja. 
+
+Link do site: https://marianacarla.pythonanywhere.com/ 
 
 ## Página inicial:
 ![image](https://github.com/marianachoratto/desafio-final-blog/assets/146736051/e960871a-718a-42b7-9090-5ddf3c77cd41)
