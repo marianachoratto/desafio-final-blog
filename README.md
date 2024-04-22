@@ -10,7 +10,7 @@ Link do site: https://marianacarla.pythonanywhere.com/
 
 ## Página inicial:
 
-![image](paginainicial.png)
+![image](media/paginainicial.png)
 
 
 ![image](https://github.com/marianachoratto/desafio-final-blog/assets/146736051/9f22f39c-d7dd-4097-9ebd-1068e907db48)
@@ -21,15 +21,15 @@ Link do site: https://marianacarla.pythonanywhere.com/
 ------------------------------------------------------------------------------------------------
 
 ## Página de edição das publicações: 
-![image](livroscadastrados.png)
+![image](media/livroscadastrados.png)
 
 ## Página de cadastro do novo livro
-![image](cadrastrolivroscategoria.png)
+![image](media/cadrastrolivroscategoria.png)
 
 ## Página de reporte de problemas com a edição
-![image](reportarproblema.png)
+![image](media/reportarproblema.png)
 
 ## Página de Administrador
-![image](admdjango.png)
+![image](media/admdjango.png)
 
 
