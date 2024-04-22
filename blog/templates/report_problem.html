@@ -9,7 +9,7 @@
     <h1>Reportar Problema</h1>
     <p>Aqui você pode reportar qualquer problema encontrado.</p>
     {% if mensagem_sucesso %}
-        <p style="color: rgb(81, 6, 98);">{{ mensagem_sucesso }}</p>
+        <p style="color: rgb(24, 159, 54);">{{ mensagem_sucesso }}</p>
     {% endif %}
     <form action="{% url 'report_problem' %}" method="post">
         {% csrf_token %}
