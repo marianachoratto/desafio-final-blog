@@ -10,7 +10,8 @@ class Post(models.Model):
         (5, '5')
     )
     titulo= models.CharField(blank=False, max_length=100, null=False )
-    autor= models.CharField(blank=False, max_length=70, null=False ) 
+    autor= models.CharField(blank=False, max_length=70, null=False )
+    categoria = models.CharField(max_length=100, blank=True, null=True)
     date= models.DateTimeField(auto_now_add=True)
     preview= models.TextField(blank=False, max_length=200, null=False)
 
