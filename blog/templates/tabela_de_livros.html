@@ -5,7 +5,7 @@
 <div class="container-fluid" id="cadastroLivro">
     <div class="row " id="telaCadastroLogado">
       <div class="col-lg-10 mx-auto "> 
-        <h1 class="text-doby-emphasis text-center"> Livros Cadastrados</h1>
+        <h1 class="text-boby-emphasis text-center"> Livros Cadastrados</h1>
         <br>
         <a href="{%url 'cadastrar_livro'%}" class="btn btn-primary">Cadastrar Novo Livro</a>
         <div class="table-responsive my-3">
@@ -27,6 +27,7 @@
                     <tr>
                         <td>{{livro.titulo}}</td>
                         <td>{{livro.autor}}</td>
+                        <td>{{livro.categoria}}</td>
                         <td>{{livro.date}}</td>
                         <td>{{livro.nota}}</td>
                         <td>{{livro.preview}}</td>
@@ -38,8 +39,13 @@
 
                 </tbody>
             </table>
-            <p>Ainda está com problemas de edição? Vá para a página de adminitração:</p>
+            <p>Ainda está com problemas de edição?</p>
+            <a href="{% url 'report_problem' %}" class="btn btn-primary">Reportar Problema</a>
+            <p>↓ Click AQUI para a pagina do ADMINISTRADOR ↓ </p>
             <a href="{% url 'admin:index' %}" class="btn btn-primary">Administração</a> 
+        
+
+
             </div>
         </div>
     </div>

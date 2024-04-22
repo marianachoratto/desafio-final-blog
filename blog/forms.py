@@ -44,7 +44,15 @@ class CadastroForm(forms.ModelForm):
         required=True,
         max_length=100,
         widget=forms.TextInput(attrs={"class": "form-control"}),
+    
     )
+    categoria = forms.CharField(
+        label="Categoria:",  
+        required=True, 
+        max_length=100, 
+        widget=forms.TextInput(attrs={"class": "form-control mb-3"}),
+    )
+
     preview = forms.CharField(
         label="Preview:",
         required=True,
@@ -64,7 +72,7 @@ class CadastroForm(forms.ModelForm):
         )
     class Meta:
         model = Post
-        fields = ["titulo", "autor", "preview", "nota", "content", "imagem"]
+        fields = ["titulo", "autor","categoria", "preview", "nota", "content", "imagem"]
 
 class CadastroUsuarioForm(forms.ModelForm):
     username= forms.CharField(
