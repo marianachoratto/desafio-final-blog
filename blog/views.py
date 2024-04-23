@@ -6,6 +6,9 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import authenticate, login
 from django.shortcuts import get_object_or_404
 from django.contrib import auth
+from django.shortcuts import render, redirect
+from django.contrib import messages
+
 
 
 # View da página inicial
@@ -140,7 +143,16 @@ def editar_um_livro(request, id):
             }
             form = CadastroForm(instance=livro)
             return render(request, "editar_um_livro.html", contexto)
-    
+        
+# Reportando problemas de ediçao
+def report_problem(request):
+    if request.method == 'POST':
+        # Exibindo a mensagem de sucesso
+        messages.success(request, 'O problema foi reportado com sucesso!')
+        return redirect("index")
+    else:
+        return render(request,"report_problem.html")
+
 
 #página de login/cadastro 
 def cadastrar(request):

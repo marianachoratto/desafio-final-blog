@@ -1,15 +1,17 @@
-# desafio-final-blog
+# DESAFIO FINAL / BLOG DE LIVROS 
 
 Projeto Final do Bootcamp de back-end com Python e Django, feito pela WomakersCode. 
 
 Projeto feito com a linguagem Python, utilizando os frameworks Django e Bootstrap-5 e SQLite3.
 
-Feito com amor e em conjunto com as integrantes do Squad Laura Perrone, Leidejane Rosa, Elizabeth Pereira, Adriana Cristina, Raissa Carneiro e Cláudia Azambuja. 
+Feito com amor e em conjunto com as integrantes do Squad Laura Perrone, Leidejane Rosa, Elizabeth Pereira, Adriana Cristina, Raissa Carneiro e Cláudia Azambuja e Vivian Rosana. 
 
 Link do site: https://marianacarla.pythonanywhere.com/ 
 
 ## Página inicial:
-![image](https://github.com/marianachoratto/desafio-final-blog/assets/146736051/e960871a-718a-42b7-9090-5ddf3c77cd41)
+
+![image](media/paginainicial.png)
+
 
 ![image](https://github.com/marianachoratto/desafio-final-blog/assets/146736051/9f22f39c-d7dd-4097-9ebd-1068e907db48)
 -----------------------------------------------------------------------------------------------
@@ -19,9 +21,15 @@ Link do site: https://marianacarla.pythonanywhere.com/
 ------------------------------------------------------------------------------------------------
 
 ## Página de edição das publicações: 
-![image](https://github.com/marianachoratto/desafio-final-blog/assets/146736051/6e0ee921-69bc-404a-91bd-e23a08b180ec)
+![image](media/livroscadastrados.png)
 
 ## Página de cadastro do novo livro
-![image](https://github.com/marianachoratto/desafio-final-blog/assets/146736051/fb450f47-6ec0-4e8f-ad39-ae4cd34f1e67)
+![image](media/cadrastrolivroscategoria.png)
+
+## Página de reporte de problemas com a edição
+![image](media/reportarproblema.png)
+
+## Página de Administrador
+![image](media/admdjango.png)
 
 

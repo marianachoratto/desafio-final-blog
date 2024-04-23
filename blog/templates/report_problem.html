@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Problema</title>
+</head>
+<body>
+    <h1>Reportar Problema</h1>
+    <p>Aqui você pode reportar qualquer problema encontrado.</p>
+    {% if mensagem_sucesso %}
+        <p style="color: rgb(24, 159, 54);">{{ mensagem_sucesso }}</p>
+    {% endif %}
+    <form action="{% url 'report_problem' %}" method="post">
+        {% csrf_token %}
+        <label for="problema">Descreva o problema:</label><br>
+        <textarea id="problema" name="problema" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
